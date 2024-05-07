@@ -1,0 +1,134 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #f1c40f;
+  border-radius: 15px;
+  margin: auto;
+  width: 50vw;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to bottom left, #ff0000, #f1c40f);
+  height: 500px;
+  padding: 22px;
+}
+
+.name {
+  position: absolute;
+  top: 1px;
+  right: 50%;
+  transform: translateX(50%);
+  margin-top: 10px;
+  font-size: 3.5rem;
+  color: #f1c40f;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black, 0px 0px 4px white;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  margin-top: 100px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #f1f1f1;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black, 0px 0px 4px white;
+  font-weight: bold;
+  justify-content: center;
+}
+
+.type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.type span {
+  margin: 0.5rem;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  border-radius: 13px;
+  border: 1px solid black;
+}
+
+.normal {
+  background-color: #A8A77A;
+}
+
+.fire {
+  background-color: #EE8130;
+}
+
+.water {
+  background-color: #6390F0;
+}
+
+.electric {
+  background-color: #F7D02C;
+}
+
+.grass {
+  background-color: #7AC74C;
+}
+
+.ice {
+  background-color: #96D9D6;
+}
+
+.fighting {
+  background-color: #C22E28;
+}
+
+.poison {
+  background-color: #A33EA1;
+}
+
+.ground {
+  background-color: #E2BF65;
+}
+
+.flying {
+  background-color: #A98FF3;
+}
+
+.psychic {
+  background-color: #F95587;
+}
+
+.bug {
+  background-color: #A6B91A;
+}
+
+.rock {
+  background-color: #B6A136;
+}
+
+.ghost {
+  background-color: #735797;
+}
+
+.dragon {
+  background-color: #6F35FC;
+}
+
+.dark {
+  background-color: #705746;
+}
+
+.steel {
+  background-color: #B7B7CE;
+}
+
+.fairy {
+  background-color: #D685AD;
+}

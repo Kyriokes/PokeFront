@@ -1,0 +1,137 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #f1c40f;
+  border-radius: 15px;
+  margin: 10px 0px;
+  width: 20vw;
+  height: 6vw;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to bottom left, #ff0000, #f1c40f);
+}
+
+.container:hover {
+  background-image: linear-gradient(to bottom right, #ff0000, #f1c40f, #ff0000);
+  border: 5px solid #e8d99c;  
+} 
+
+.name {
+  position: absolute;
+  top: 1px;
+  right: 75px;
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #f1c40f;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black, 0px 0px 4px white;
+}
+
+.image {
+  width: 120px;
+  height: 100px;
+  object-fit: contain;
+  position: absolute;
+  top: 1px;
+  left: 10px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black, 0px 0px 4px white;
+}
+
+.stats>div {
+  flex: 1;
+}
+
+.type {
+  position: absolute;
+  top: 65px;
+  right: 40px;
+  display: flex;
+  gap: 5px;
+}
+
+.type span {
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  border-radius: 13px;
+  border: 1px solid black;
+}
+
+.normal {
+  background-color: #A8A77A;
+}
+
+.fire {
+  background-color: #EE8130;
+}
+
+.water {
+  background-color: #6390F0;
+}
+
+.electric {
+  background-color: #F7D02C;
+}
+
+.grass {
+  background-color: #7AC74C;
+}
+
+.ice {
+  background-color: #96D9D6;
+}
+
+.fighting {
+  background-color: #C22E28;
+}
+
+.poison {
+  background-color: #A33EA1;
+}
+
+.ground {
+  background-color: #E2BF65;
+}
+
+.flying {
+  background-color: #A98FF3;
+}
+
+.psychic {
+  background-color: #F95587;
+}
+
+.bug {
+  background-color: #A6B91A;
+}
+
+.rock {
+  background-color: #B6A136;
+}
+
+.ghost {
+  background-color: #735797;
+}
+
+.dragon {
+  background-color: #6F35FC;
+}
+
+.dark {
+  background-color: #705746;
+}
+
+.steel {
+  background-color: #B7B7CE;
+}
+
+.fairy {
+  background-color: #D685AD;
+}
