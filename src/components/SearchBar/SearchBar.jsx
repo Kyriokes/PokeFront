@@ -3,6 +3,9 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
+const host = "https://worldwide-shannon-kyriokes-ccf9e8a1.koyeb.app"
+//const host = "http://localhost:3001"
+
 function SearchBar() {
   const navigate = useNavigate();
   const [pokemonName, setPokemonName] = useState("");
@@ -10,7 +13,7 @@ function SearchBar() {
   const searchPokemon = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:3001/pokemon?name=${pokemonName}`
+        `${host}/pokemon?name=${pokemonName}`
       );
       const pokemon = response.data;
       const id = pokemon.id;

@@ -8,11 +8,12 @@ import {
   SET_TOTAL_PAGES,
 } from "./action-type";
 
-
+const host = "https://worldwide-shannon-kyriokes-ccf9e8a1.koyeb.app"
+//const host = "http://localhost:3001"
 
 export const getPokemons = () => {
   return async function (dispatch, getState) {
-    const apiPokemon = await axios.get("http://localhost:3001/pokemon/");
+    const apiPokemon = await axios.get(`${host}/pokemon/`);
     const pokemon = apiPokemon.data;
     dispatch({ type: GET_POKEMONS, payload: pokemon });
     const totalItems = pokemon.length;
@@ -24,7 +25,7 @@ export const getPokemons = () => {
 
 export const getPokemonDetail = (id) => {
   return async (dispatch) => {
-    const response = await axios.get(`http://localhost:3001/pokemon/${id}`);
+    const response = await axios.get(`${host}/pokemon/${id}`);
     const pokemon = response.data;
     dispatch({ type: GET_POKEMON_DETAIL, payload: pokemon });
   };
@@ -32,7 +33,7 @@ export const getPokemonDetail = (id) => {
 
 export const getTypes = () => {
   return async (dispatch) => {
-    const response = await axios(`http://localhost:3001/type`);
+    const response = await axios(`${host}/type`);
     const types = response.data;
     dispatch({ type: GET_TYPES, payload: types });
   };
@@ -40,7 +41,7 @@ export const getTypes = () => {
 
 export const createPokemon = (form) => {
   return async (dispatch) => {
-    const response = await axios.post("http://localhost:3001/pokemon", form);
+    const response = await axios.post(`${host}/pokemon`, form);
     const newPokemon = response.data;
     dispatch({ type: POST_POKEMON, payload: newPokemon });
   };
